@@ -1,11 +1,11 @@
-IBM MobileFirst Platform Foundation
+IBM MobileFirst Foundation
 ===
-## QRCode Login Cordova App Sample
-A sample application demonstrating the QR code login functionality.
+## Trust your web client
+A sample mobile application demonstrating how to add trusted web client with MobileFirst Foundation 8.0 by scanning a QR code. 
 
 ### Usage
 1. From a command-line window, navigate to the project's root folder and run the commands:
- - `cordova platform add` - to add a platform. 
+ - `cordova platform add ['ios' or 'android' etc...]` - to add a platform. 
  - `mfpdev app register` - to register the application.
  - `cordova run` - to run the application.
 

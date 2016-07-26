@@ -29,12 +29,16 @@ function wlCommonInit() {
     document.getElementById("qrCodeLogin").addEventListener("click", qrCodeLogin);
     var userLoginChallengeHandler = UserLoginChallengeHandler();
 
+
+
     WLAuthorizationManager.obtainAccessToken(userLoginChallengeHandler.securityCheckName).then(
         function (accessToken) {
             WL.Logger.debug("obtainAccessToken onSuccess");
+            showProtectedDiv();
         },
         function (response) {
             WL.Logger.debug("obtainAccessToken onFailure: " + JSON.stringify(response));
+            showLoginDiv();
         }
     );
 }

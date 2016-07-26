@@ -12,9 +12,10 @@ QRCodeChallengeHandler.handleChallenge = function (challenge) {
     if (challenge.isRegistered) {
         QRCodeChallengeHandler.submitChallengeAnswer({});
     } else {
-        document.getElementById("displayTxt").innerHTML = "Use the QR code login app to scan the code.";
+        document.getElementById("displayTxt").innerHTML = "To turst this web client, use your mobile app to scan the QR code.";
         var qrImage = document.getElementById("qrCode");
         qrImage.src = "data:image/jpg;base64," + challenge.qrCode;
+        document.getElementById("titleDisplayText").innerHTML = "IBM <span class='bold'>MobileFirst</span> Foundation";
         
         socket.on(challenge.qrUUID, function (data) {
                 if (data.refresh) {
@@ -30,9 +31,9 @@ function getWebUser() {
     resourceRequest.send().then(
         function (response) {
             document.getElementById("displayTxt").innerHTML = "";
-            document.getElementById("titleDisplayText").innerHTML = "Hello " + response.responseJSON["displayName"]
-             var qrImage = document.getElementById("qrCode");
-             qrImage.src = "www/images/foundation.png";
+            document.getElementById("titleDisplayText").innerHTML = "<span class='bold'>Hello " + response.responseJSON["displayName"] + "</span>"
+            var qrImage = document.getElementById("qrCode");
+            qrImage.src = "www/images/foundation.png";
         },
         function (error) {
             alert(JSON.stringify(error));
