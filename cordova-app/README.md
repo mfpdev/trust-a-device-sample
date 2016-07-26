@@ -1,7 +1,5 @@
 IBM MobileFirst Foundation
 ===
-## Trust your web client
-A sample mobile application demonstrating how to add trusted web client with MobileFirst Foundation 8.0 by scanning a QR code. 
 
 ### Usage
 1. From a command-line window, navigate to the project's root folder and run the commands:

@@ -1,7 +1,5 @@
 IBM MobileFirst Platform Foundation
 ===
-## QRCodeWebLogin Security Check Adapter
-A Maven project containing the QRCodeWebLogin Security Check
 
 ### Usage
 * Change webURLForNotify in [adapter.xml](src/main/adapter-resources/adapter.xml) to point to the Node Web App.

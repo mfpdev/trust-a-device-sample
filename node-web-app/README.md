@@ -1,7 +1,5 @@
 IBM MobileFirst Foundation
 ===
-## Add trusted web client
-A NodeJS web app sample application demonstrating how to add trusted web client with MobileFirst Foundation by using the a QR code.
 
 ### Usage
 1.  In the file [`app.js`](app.js) change `mfpServer` to point to you MobileFirst Foundation server URL.
