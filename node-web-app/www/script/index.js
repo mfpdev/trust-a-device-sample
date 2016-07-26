@@ -12,7 +12,7 @@ QRCodeChallengeHandler.handleChallenge = function (challenge) {
     if (challenge.isRegistered) {
         QRCodeChallengeHandler.submitChallengeAnswer({});
     } else {
-        document.getElementById("displayTxt").innerHTML = "To turst this web client, use your mobile app to scan the QR code.";
+        document.getElementById("displayTxt").innerHTML = "To turst this device, use your mobile app to scan the QR code.";
         var qrImage = document.getElementById("qrCode");
         qrImage.src = "data:image/jpg;base64," + challenge.qrCode;
         document.getElementById("titleDisplayText").innerHTML = "IBM <span class='bold'>MobileFirst</span> Foundation";
@@ -27,7 +27,6 @@ QRCodeChallengeHandler.handleChallenge = function (challenge) {
 
 function getWebUser() {
     var resourceRequest = new WLResourceRequest("/adapters/QRCodeWebLogin/user", WLResourceRequest.GET);
-
     resourceRequest.send().then(
         function (response) {
             document.getElementById("displayTxt").innerHTML = "";
