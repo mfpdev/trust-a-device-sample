@@ -20,7 +20,7 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
     - Use either Maven or MobileFirst Developer CLI to [build and deploy adapter](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/).
 
 * [QRCodeWebLogin Security Check](/qrcode-web-login-security-check) - The `QRCodeWebLogin` Security Check which will be used to authorized the web client / add trust in device.
-    - Change the `webURLForNotify` property in the [adapter.xml](src/main/adapter-resources/adapter.xml) to point to the Node web app.
+    - Change the `webURLForNotify` property in the [adapter.xml](/qrcode-web-login-security-check/src/main/adapter-resources/adapter.xml) to point to the Node web app.
     - Deploy the adapter same as you did for `UserLogin` Security Check.
     
 > To be able generating the QR Code image, the security check uses [qrgen](https://github.com/kenglxn/QRGen).
@@ -32,7 +32,6 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
         - `node app.js` - to run the node web server.
 
 > To allow access to MobileFirst Foundation server, the NodeJS web app uses [IBM MobileFirst Web SDK](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adding-the-mfpf-sdk/web/). 
-    
 
 > To allow the auto refresh with push, the NodeJS web app uses [socket.io](http://socket.io/).
 
