@@ -35,7 +35,7 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
 
 > To allow the auto refresh with push, the NodeJS web app uses [socket.io](http://socket.io/).
 
-* [The Cordova Mobile App](cordova-app) - The mobile app which will be used to scan the QR code on the web app.
+* [Cordova Mobile App](cordova-app) - The mobile app which will be used to scan the QR code on the web app.
     - From a command-line window, navigate to the project's root folder and run the commands:
         - `cordova platform add {your favorite platform}` - to add a platform. 
         - `mfpdev app register` - to register the application.
