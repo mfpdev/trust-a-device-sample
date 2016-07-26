@@ -2,7 +2,7 @@ IBM MobileFirst Platform Foundation
 ===
 
 ### Usage
-* Change webURLForNotify in [adapter.xml](src/main/adapter-resources/adapter.xml) to point to the Node Web App.
+* Change the `webURLForNotify` property in the [adapter.xml](src/main/adapter-resources/adapter.xml) to point to the Node web app.
 * Use either Maven or MobileFirst Developer CLI to [build and deploy adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/).
 * To test or debug an adapter, see the [testing and debugging adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/testing-and-debugging-adapters) tutorial.
 
