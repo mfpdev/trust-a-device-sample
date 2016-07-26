@@ -10,12 +10,12 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
 1. Understanding the IBM MobileFirst Platform [Authentication and Security](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).
 2. Understanding the IBM MobileFirst Platform [Java Adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/java-adapters/).
 3. Pre-installed IBM MobileFirst Platform [development environment](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/setting-up-your-development-environment/).
-4. Installed [NodeJS runtime](https://nodejs.org/en/) 
+4. Understanding [NodeJS](https://nodejs.org/en/)
 
 ### Usage
 #### The sample is consisting of the following components:
 
-* The `UserLogin` Security Check - The `UserLogin` Security Check which will used to autorized the mobile app.
+* [UserLogin Security Check](https://hub.jazz.net/git/imflocalsdk/console-samples/contents/master/UserLogin.zip) - The `UserLogin` Security Check which will used to autorized the mobile app.
     - Download the UserLogin Security from the [following link](https://hub.jazz.net/git/imflocalsdk/console-samples/contents/master/UserLogin.zip)
     - Use either Maven or MobileFirst Developer CLI to [build and deploy adapter](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/).
 
