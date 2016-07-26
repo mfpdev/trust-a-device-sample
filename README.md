@@ -9,10 +9,10 @@ A sample showing how to add trusted web client by scan a QR code from your mobil
 ### Usage
 * The sample is consisting of 4 components, to run the sample follow each part instructions by click on the following links:
 
-    1. [The UserLogin Security Check] (https://hub.jazz.net/git/imflocalsdk/console-samples/contents/master/UserLogin.zip) 
-    2. [The QRCodeWebLogin Security Check](qrcode-web-login-security-check/README.md)
-    3. [The NodeJS Web App] (node-web-app/README.md) - The web application which will display the QRCode. After scan it the web will display "Hello user" message.
-    4. [The Cordova Mobile App] (cordova-app/README.md) - The mobile application which will be used to scan the QRCode on the web app.
+    1. [The UserLogin Security Check] (https://hub.jazz.net/git/imflocalsdk/console-samples/contents/master/UserLogin.zip) - The QRCodeWebLogin Security Check which will used to autorized the mobile app.
+    2. [The QRCodeWebLogin Security Check](qrcode-web-login-security-check/README.md) - The QRCodeWebLogin Security Check which will used to authorized the web client.
+    3. [The NodeJS Web App] (node-web-app/README.md) - The web app which will display the QR code. Scanning the QR code will let the mobile app trust the web app.
+    4. [The Cordova Mobile App] (cordova-app/README.md) - The mobile app which will be used to scan the QR code on the web app.
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 8.0
