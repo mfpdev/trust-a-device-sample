@@ -4,7 +4,7 @@ IBM MobileFirst Foundation 8.0
 A sample showing how to add trusted web client by scan a QR code from your mobile app using [MobileFirst Foundation 8.0](http://mobilefirstplatform.ibmcloud.com).  
 
 ##Demo
-[![Trust your web client](https://img.youtube.com/vi/HgA-aPUWEeE/0.jpg)](https://www.youtube.com/watch?v=HgA-aPUWEeE)
+[![Trust your web client](https://img.youtube.com/vi/LFt7FOAQw_8/0.jpg)](https://www.youtube.com/watch?v=LFt7FOAQw_8)
 
 ### Usage
 * The sample is consisting of 4 components, to run the sample follow each part instructions by click on the following links:
