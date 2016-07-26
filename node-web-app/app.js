@@ -1,3 +1,19 @@
+/*
+ *    © Copyright 2016 IBM Corp.
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ */
+
 var express = require('express');
 var request = require('request');
 var cfenv = require('cfenv');
@@ -7,8 +23,9 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 var appEnv = cfenv.getAppEnv();
-var mfpServer = "https://mobilefoundation-bb-server.mybluemix.net:443";
-//var mfpServer = "http://localhost:9080";
+
+//The MobileFirst Foundation server URL
+var mfpServer = "http://localhost:9080";
 
 app.use('/www', express.static(__dirname + '/www'));
 app.use('/node_modules/ibm-mfp-web-sdk', express.static(__dirname + '/node_modules/ibm-mfp-web-sdk'));
@@ -26,10 +43,12 @@ app.use('/mfp/*', function (req, res) {
   req.pipe(request[req.method.toLowerCase()](url)).pipe(res);
 });
 
+//socket.io connection
 io.on('connection', function (socket) {
   console.log('a user connected');
 });
 
+//Notifying client to refresh
 app.get('/refresh/:uuid', function (req, res) {
   var uuid = req.params.uuid;
   console.log('Get refresh event from uuid ' + uuid);
@@ -37,7 +56,6 @@ app.get('/refresh/:uuid', function (req, res) {
   res.statusCode = 200;
   return res.send('Sent refresh event to client id ' + uuid);
 });
-
 
 
 http.listen(appEnv.port, '0.0.0.0', function () {

@@ -37,7 +37,7 @@ h1 {
 
 #header {
 	text-align: center;
-	background-color: #1D4D90;
+	background-color: #4d9afc;
 	color: #F9FAFB;
 	font-size: 16px;
 	height: 38px;
@@ -55,16 +55,19 @@ h1 {
 }
 
 button {
-	width: 44%;
+	width: 73%;
 	height: 3em;
 	font-size: 0.8em;
-	background-color: #eee;
-    margin-left: 14px;
+	background-color: #4d9afc;
+	color: #F9FAFB;
+	box-shadow: none;
+	border: none;
+ 	height: 50px;
+    font-size:large;
 }
 
 #qrCodeLogin {
-    float: left;
-    margin-left: 14px;
+    margin-bottom: 20%;
 }
 
 input {
@@ -74,24 +77,81 @@ input {
     padding-left: 5px;
 	font-size: 90%;
 	height: 26px;
-	width: 90%;
-    margin-left: 14px;
+	width: 70%;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	color: #5aaafa;
+	font-size: 18px;
+	border-bottom: 1px solid #5aaafa;
+	font-weight: bold;
+	outline: none;
+}
+
+#loginDiv {
+	text-align: center;
+}
+
+#protectedDiv {
+	text-align: center;
 }
 
 .label {
     display: inline-block;
-	margin: 1em 0 0 14px;
+	margin: 1em 0 0;
 	text-align: left;
 	width: 500px;
 }
 
+#foundationDiv {
+	text-align:center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.statusDiv {
+	color : #9e9a99;
+	font-size: 18px;
+	text-align: center;
+}
+
+#helloDiv {
+	height: 70px;
+}
+
+#helloUser {
+	text-align: center;
+	color: #5aaafa;
+	font-weight: bold;
+	font-size: 24px;
+}
 
 #rememberMe {
-    width: 7%;
-    float: left;
+	padding-left: 30%;
+	width: 9%;
+	float: left;
+	border:1px solid #5aaafa;background:white;
+	color: #5aaafa;
 }
 
 #rememberMeText {
     line-height: 2.5em;
     margin: 0;
+	color: #5aaafa;
+}
+
+::-webkit-input-placeholder {
+   color: #5aaafa;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #5aaafa;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #5aaafa;  
+}
+
+:-ms-input-placeholder {  
+   color: #5aaafa;  
 }

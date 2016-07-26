@@ -27,30 +27,36 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/UserLoginChallengeHandler.js"></script>
-    <title>Remember Me</title>
+    <title>QRCode Login App</title>
   </head>
   <body>
       <div id="header">
           <h1>QRCode Login</h1>
       </div>
       <div id="wrapper">
+          <div id="foundationDiv">
+              <image src="img/foundation.png"/>
+          </div>
           <div id="loginDiv" style="display: none;">
-                <input type="text" autocapitalize="off" autocorrect="off" placeholder="Enter Username" id="username" /><br />
-                <input type="password" placeholder="Enter Password" id="password" /><br/>
-                <p id="rememberMeText"><input type="checkbox" id="rememberMe">Remember me</p>
+                <input type="text" autocapitalize="off" autocorrect="off" placeholder="USERNAME" id="username" /><br />
+                <input type="password" placeholder="PASSWORD" id="password" /><br/>
                 <br clear="all"/>
                 <button id="login">Login</button>
-                <p class="label" id="statusMsg"></p>
+                <div class="statusDiv">
+                    <p id="statusMsg"></p>
+                </div>
           </div>
-
           <div id="protectedDiv" style="display: none;">
-                <p class="label" id ="helloUser"></p>
+                <div id="helloDiv">
+                    <p id="helloUser">Hello Ishai</p>
+                </div>
                 <button id="qrCodeLogin">QRCode Login</button>
-                <button id="logout">Logout</button>
-                <p class="label" id="resultLabel"></p>
+                <div class="statusDiv">
+                    <p id="resultLabel"></p>
+                </div>
           </div>
-          <div id="blockedDiv" style="display: none;">
-              <p class="label" id="blockedMsg"></p>
+          <div id="blockedDiv" class="statusDiv" style="display: none;">
+              <p id="blockedMsg"></p>
           </div>
       </div>
   </body>

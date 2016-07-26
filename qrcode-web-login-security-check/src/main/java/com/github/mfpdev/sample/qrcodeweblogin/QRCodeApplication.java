@@ -1,4 +1,4 @@
-/**
+/*
  *    © Copyright 2016 IBM Corp.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,9 +23,8 @@ import java.util.logging.Logger;
  * The JAX-RS Application class
  *
  * @author Ishai Borovoy
- * @since 06/03/206
+ * @since 07/25/2016
  */
-
 public class QRCodeApplication extends MFPJAXRSApplication {
 
     static Logger logger = Logger.getLogger(QRCodeApplication.class.getName());

@@ -35,7 +35,8 @@ function wlCommonInit() {
         },
         function (response) {
             WL.Logger.debug("obtainAccessToken onFailure: " + JSON.stringify(response));
-        });
+        }
+    );
 }
 
 function showLoginDiv() {
@@ -60,7 +61,7 @@ function scan() {
             if (!result.cancelled) {
                 if (result.format == "QR_CODE") {
                     var uuid = result.text;
-                    sendWebUserApproval (uuid);
+                    sendWebUserApproval(uuid);
                 }
             }
         },
@@ -74,7 +75,7 @@ function sendWebUserApproval(uuid) {
     var resourceRequest = new WLResourceRequest("/adapters/QRCodeWebLogin/approveWebUser?uuid=" + uuid, WLResourceRequest.POST);
     resourceRequest.send().then(
         function (response) {
-            WL.Logger.debug("Success: " + response.responseText);
+            WL.Logger.debug("QR code login success: " + response.responseText);
             document.getElementById("resultLabel").innerHTML = "Success: " + response.responseText;
         },
         function (response) {

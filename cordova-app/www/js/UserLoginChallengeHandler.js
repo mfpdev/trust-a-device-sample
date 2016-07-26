@@ -13,13 +13,14 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
+
 var UserLoginChallengeHandler = function() {
+    var isFirstChallenge = true;
     var isChallenged = false;
     var securityCheckName = 'UserLogin';
     var userLoginChallengeHandler = WL.Client.createSecurityCheckChallengeHandler(securityCheckName);
 
     document.getElementById("login").addEventListener("click", login);
-    document.getElementById("logout").addEventListener("click", logout);
 
     userLoginChallengeHandler.securityCheckName = securityCheckName;
 
@@ -27,20 +28,23 @@ var UserLoginChallengeHandler = function() {
         WL.Logger.debug("handleChallenge");
         showLoginDiv();
         isChallenged = true;
-        var statusMsg = "Remaining Attempts: " + challenge.remainingAttempts;
-        if (challenge.errorMsg !== null){
-            statusMsg = statusMsg + "<br/>" + challenge.errorMsg;
+        if (!isFirstChallenge) {
+            var statusMsg = "Remaining Attempts: " + challenge.remainingAttempts;
+            if (challenge.errorMsg !== null){
+                statusMsg = statusMsg + "<br/>" + challenge.errorMsg;
+            }
+            document.getElementById("statusMsg").innerHTML = statusMsg;
         }
-        document.getElementById("statusMsg").innerHTML = statusMsg;
+        isFirstChallenge = false;
+      
     };
 
     userLoginChallengeHandler.handleSuccess = function(data) {
         WL.Logger.debug("handleSuccess");
         isChallenged = false;
-        document.getElementById ("rememberMe").checked = false;
         document.getElementById('username').value = "";
         document.getElementById('password').value = "";
-        document.getElementById("helloUser").innerHTML = "Hello, " + data.user.displayName;
+        document.getElementById("helloUser").innerHTML = "Hello " + data.user.displayName;
         showProtectedDiv();
     };
 
@@ -62,15 +66,14 @@ var UserLoginChallengeHandler = function() {
     function login() {
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
-        var rememberMeState = document.getElementById ("rememberMe").checked;
         if (username === "" || password === ""){
             alert("Username and password are required");
             return;
         }
         if (isChallenged){
-            userLoginChallengeHandler.submitChallengeAnswer({'username':username, 'password':password, rememberMe: rememberMeState});
+            userLoginChallengeHandler.submitChallengeAnswer({'username':username, 'password':password, rememberMe: true});
         } else {
-            WLAuthorizationManager.login(securityCheckName,{'username':username, 'password':password, rememberMe: rememberMeState}).then(
+            WLAuthorizationManager.login(securityCheckName,{'username':username, 'password':password, rememberMe: true}).then(
                 function () {
                     WL.Logger.debug("login onSuccess");
                 },

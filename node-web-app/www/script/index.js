@@ -12,7 +12,7 @@ QRCodeChallengeHandler.handleChallenge = function (challenge) {
     if (challenge.isRegistered) {
         QRCodeChallengeHandler.submitChallengeAnswer({});
     } else {
-        document.getElementById("displayTxt").innerHTML = "To login use the QRCode Login App on your phone to scan the QR code";
+        document.getElementById("displayTxt").innerHTML = "Use the QR code login app to scan the code.";
         var qrImage = document.getElementById("qrCode");
         qrImage.src = "data:image/jpg;base64," + challenge.qrCode;
         
@@ -29,7 +29,10 @@ function getWebUser() {
 
     resourceRequest.send().then(
         function (response) {
-            document.getElementById("displayTxt").innerHTML = "Hello " + response.responseJSON["displayName"];
+            document.getElementById("displayTxt").innerHTML = "";
+            document.getElementById("titleDisplayText").innerHTML = "Hello " + response.responseJSON["displayName"]
+             var qrImage = document.getElementById("qrCode");
+             qrImage.src = "www/images/foundation.png";
         },
         function (error) {
             alert(JSON.stringify(error));
