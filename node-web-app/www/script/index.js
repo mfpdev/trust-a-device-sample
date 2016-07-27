@@ -10,6 +10,7 @@ QRCodeChallengeHandler = WL.Client.createSecurityCheckChallengeHandler("qrcode")
 
 QRCodeChallengeHandler.handleChallenge = function (challenge) {
     if (challenge.isRegistered) {
+        //In case the page is refreshed manually 
         QRCodeChallengeHandler.submitChallengeAnswer({});
     } else {
         document.getElementById("displayTxt").innerHTML = "To turst this device, use your mobile app to scan the QR code.";
@@ -18,9 +19,9 @@ QRCodeChallengeHandler.handleChallenge = function (challenge) {
         document.getElementById("titleDisplayText").innerHTML = "IBM <span class='bold'>MobileFirst</span> Foundation";
         
         socket.on(challenge.qrUUID, function (data) {
-                if (data.refresh) {
-                    location.reload();   
-                }
+            if (data.refresh) {
+                QRCodeChallengeHandler.submitChallengeAnswer({});
+            }
         });
     }
 };

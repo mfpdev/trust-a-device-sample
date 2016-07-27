@@ -18,39 +18,36 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>Trust this device</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="www/stylesheets/style.css">
-    <script type="text/javascript" src="node_modules/ibm-mfp-web-sdk/ibmmfpf.js"></script>
-    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-    <script src="www/script/index.js"></script>
+<head>
+  <title>Trust this device</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="www/stylesheets/style.css">
+  <script type="text/javascript" src="node_modules/ibm-mfp-web-sdk/ibmmfpf.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script src="www/script/index.js"></script>
 </head>
 
-  <body>
-     <div id="title">
-      <h1>Trust this device</h1>
-     </div>
-     <div id="content">
-        <table>
-            <tr>
-              <td>          
-                <!-- An empty image  -->
-                <img id="qrCode" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-              </td>
-              <td>
-                <div>
-                   <p id="titleDisplayText"></p>
-                <div>
-                <div>
-                   <p id="displayTxt"></p>
-                </div> 
-              </td>
-            </tr>
-        </table>
+<body>
+  <div id="title">
+    <h1>Trust this device</h1>
+  </div>
+  <div id="content">
+    <div style="width: 100%; overflow: hidden;">
+      <div style="float: left;padding-top:20px">
+        <img id="qrCode" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
       </div>
-  </body>
+      <div style="padding-top:20px">
+        <div>
+          <p id="titleDisplayText"></p>
+          <div>
+            <div>
+              <p id="displayTxt"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
 
 </html>

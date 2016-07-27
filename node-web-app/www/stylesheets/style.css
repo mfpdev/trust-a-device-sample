@@ -33,7 +33,7 @@ body,html {
 }
 
 #titleDisplayText {
-	font-size: 28px;
+	font-size: 30px;
 }
 
 #displayText {
@@ -42,14 +42,14 @@ body,html {
 
 #content {
 	text-align: center ;
-	width: 800px;
+	width: 55%;
 	background-color: white;
 	color: #666666;
 
 	position:fixed;
 	top: 40%;
-	left: 40%;
-	height:400px;
+	left: 36%;
+	height:300px;
 	margin-top: -9em; 
 	margin-left: -15em;
 	padding-bottom: 30px;
@@ -100,15 +100,6 @@ h1 {
 
 .bold {
 	font-weight: bold;
-}
-
-
-table {
-	table-layout: fixed;
-	width: 800px;
-	margin: 0 auto;
-	word-wrap: break-word;
-	padding-top:10%;
 }
 
 th {
