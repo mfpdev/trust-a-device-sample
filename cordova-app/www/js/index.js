@@ -60,6 +60,7 @@ function qrCodeLogin() {
 }
 
 function scan() {
+    document.getElementById("resultLabel").innerHTML = "";
     cordova.plugins.barcodeScanner.scan(
         function (result) {
             if (!result.cancelled) {
@@ -80,11 +81,15 @@ function sendWebUserApproval(uuid) {
     resourceRequest.send().then(
         function (response) {
             WL.Logger.debug("QR code login success: " + response.responseText);
-            document.getElementById("resultLabel").innerHTML = "Success: " + response.responseText;
+            if (response.responseText === "true") {
+                 document.getElementById("resultLabel").innerHTML = "Trusted device added successfully";
+            } else {
+                 document.getElementById("resultLabel").innerHTML = result + "Failed to add a trusted device.";
+            }
         },
         function (response) {
             WL.Logger.debug("QR code login failed: " + JSON.stringify(response));
-            document.getElementById("resultLabel").innerHTML = "QR code login failed";
+            document.getElementById("resultLabel").innerHTML = "Failed to add a trusted device.";
         }
     );
 }
