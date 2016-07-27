@@ -44,7 +44,7 @@ var UserLoginChallengeHandler = function() {
         isChallenged = false;
         document.getElementById('username').value = "";
         document.getElementById('password').value = "";
-        document.getElementById("helloUser").innerHTML = "Hello " + data.user.displayName;
+        localStorage.setItem("displayName", data.user.displayName);
         showProtectedDiv();
     };
 

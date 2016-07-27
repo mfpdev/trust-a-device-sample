@@ -27,10 +27,11 @@ var wlInitOptions = {
 // Called automatically after MFP framework initialization by WL.Client.init(wlInitOptions).
 function wlCommonInit() {
     document.getElementById("qrCodeLogin").addEventListener("click", qrCodeLogin);
+    obtainToken();
+}
+
+function obtainToken() {
     var userLoginChallengeHandler = UserLoginChallengeHandler();
-
-
-
     WLAuthorizationManager.obtainAccessToken(userLoginChallengeHandler.securityCheckName).then(
         function (accessToken) {
             WL.Logger.debug("obtainAccessToken onSuccess");
@@ -53,6 +54,10 @@ function showProtectedDiv() {
     document.getElementById('loginDiv').style.display = 'none';
     document.getElementById('resultLabel').innerHTML = "";
     document.getElementById('protectedDiv').style.display = 'block';
+    var displayName = localStorage.getItem("displayName");
+    if (displayName) {
+        document.getElementById("helloUser").innerHTML = "Hello " + displayName
+    }
 }
 
 function qrCodeLogin() {
