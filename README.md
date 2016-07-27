@@ -17,8 +17,8 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
 #### The sample is consisting of the following components:
 
 * [UserLogin Security Check](https://hub.jazz.net/git/imflocalsdk/console-samples/contents/master/UserLogin.zip) - The `UserLogin` Security Check which will used to autorized the mobile app.
-    - Download the UserLogin Security from the [following link](https://hub.jazz.net/git/imflocalsdk/console-samples/contents/master/UserLogin.zip)
-    - Use either [Maven](https://maven.apache.org/() or [MobileFirst Developer CLI](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/6.3/advanced-client-side-development/using-cli-create-build-manage-project-artifacts/) to [build and deploy adapter](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/).
+    - Download the UserLogin Security Check from the [following link](https://hub.jazz.net/git/imflocalsdk/console-samples/contents/master/UserLogin.zip)
+    - Use either [Maven](https://maven.apache.org/) or [MobileFirst Developer CLI](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/6.3/advanced-client-side-development/using-cli-create-build-manage-project-artifacts/) to [build and deploy adapter](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/).
 
 * [QRCodeWebLogin Security Check](/qrcode-web-login-security-check) - The `QRCodeWebLogin` Security Check which will be used to authorized the web client / add trust in device.
     - Change the `webURLForNotify` property in the [adapter.xml](/qrcode-web-login-security-check/src/main/adapter-resources/adapter.xml) to point to the Node web app.
@@ -42,11 +42,11 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
         - `mfpdev app register` - to register the application.
         - `cordova run` - to run the application.
 
-> To be able scan QR code the app is using the PhoneGap Plugin BarcodeScanner(https://github.com/phonegap/phonegap-plugin-barcodescanner.git).
+> To be able scan QR code the app is using the [PhoneGap Plugin BarcodeScanner](https://github.com/phonegap/phonegap-plugin-barcodescanner.git).
 
 ### Deployment
 You can either run this sample on local installation of [IBM MobileFirst Foundation](https://mobilefirstplatform.ibmcloud.com/downloads/) and [NodeJS](https://nodejs.org/en/download/), 
-Or using [IBM MobileFirst Foundation on BlueMix](https://www.ibm.com/marketplace/cloud/mobile-cloud-applications/us/en-us) and [CloudFoundry NodeJS appilcation](https://www.ibm.com/developerworks/cloud/library/cl-bluemix-fundamentals-create-and-deploy-a-node-app-to-the-cloud/).
+Or using [IBM MobileFirst Foundation on Bluemix](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ibm-containers/using-mobile-foundation/) and [CloudFoundry NodeJS appilcation](https://www.ibm.com/developerworks/cloud/library/cl-bluemix-fundamentals-create-and-deploy-a-node-app-to-the-cloud/).
     
 ### Supported Levels
 IBM MobileFirst Platform Foundation 8.0

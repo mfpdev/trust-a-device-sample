@@ -31,7 +31,7 @@ function getWebUser() {
     resourceRequest.send().then(
         function (response) {
             document.getElementById("displayTxt").innerHTML = "";
-            document.getElementById("titleDisplayText").innerHTML = "<span class='bold'>Hello " + response.responseJSON["displayName"] + "</span>"
+            document.getElementById("titleDisplayText").innerHTML = "<span class='medium'>Hello " + response.responseJSON["displayName"] + "</span>"
             var qrImage = document.getElementById("qrCode");
             qrImage.src = "www/images/foundation.png";
         },

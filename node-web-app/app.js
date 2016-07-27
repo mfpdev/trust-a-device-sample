@@ -25,7 +25,7 @@ var io = require('socket.io')(http);
 var appEnv = cfenv.getAppEnv();
 
 //The MobileFirst Foundation server URL
-var mfpServer = "https://mobilefoundation-bb-server.mybluemix.net";
+var mfpServer = "http://localhost:9080";
 
 app.use('/www', express.static(__dirname + '/www'));
 app.use('/node_modules/ibm-mfp-web-sdk', express.static(__dirname + '/node_modules/ibm-mfp-web-sdk'));
