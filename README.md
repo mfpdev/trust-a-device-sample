@@ -1,6 +1,6 @@
 IBM MobileFirst Foundation 8.0
 ===
-## Trust your device sample 
+## Trust a device sample 
 A sample showing how to add trusted device by scan a QR code from your mobile app using [MobileFirst Foundation 8.0](http://mobilefirstplatform.ibmcloud.com).
 
 ##Demo
