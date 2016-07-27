@@ -16,7 +16,7 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
 
 #### The sample is consisting of the following components:
 
-* [UserLogin Security Check](https://hub.jazz.net/git/imflocalsdk/console-samples/contents/master/UserLogin.zip) - The `UserLogin` Security Check which will used to autorized the mobile app.
+* [UserLogin Security Check](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/user-authentication/security-check/) - The `UserLogin` Security Check which will used to autorized the mobile app.
     - Download the UserLogin Security Check from the [following link](https://hub.jazz.net/git/imflocalsdk/console-samples/contents/master/UserLogin.zip)
     - Use either [Maven](https://maven.apache.org/) or [MobileFirst Developer CLI](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/6.3/advanced-client-side-development/using-cli-create-build-manage-project-artifacts/) to [build and deploy adapter](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/).
 
