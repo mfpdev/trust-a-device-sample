@@ -71,7 +71,7 @@ public class QRCodeWebLoginSecurityCheck extends UserAuthenticationSecurityCheck
 			String qrUUID = UUID.randomUUID().toString();
 			registrationContext.getRegisteredPublicAttributes().put(QR_CODE_UUID, qrUUID);
 
-			ByteArrayOutputStream stream = QRCode.from(qrUUID).to(ImageType.JPG).withSize(300,300).stream();
+			ByteArrayOutputStream stream = QRCode.from(qrUUID).to(ImageType.JPG).withSize(QR_CODE_IMAGE_SIZE,QR_CODE_IMAGE_SIZE).stream();
 			String encodedImage = Base64.encodeBase64String(stream.toByteArray());
 			challenge.put("qrCode", encodedImage);
 			challenge.put("qrUUID", qrUUID);

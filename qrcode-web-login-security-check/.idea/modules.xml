@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/qrcode-web-login-security-check.iml" filepath="$PROJECT_DIR$/qrcode-web-login-security-check.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QRCodeWebLogin.iml" filepath="$PROJECT_DIR$/QRCodeWebLogin.iml" />
     </modules>
   </component>
 </project>

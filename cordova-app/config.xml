@@ -126,7 +126,7 @@
     </mfp:windows>
     <mfp:platformVersion>8.0.0.00-20160628-1146</mfp:platformVersion>
     <mfp:clientCustomInit enabled="false" />
-    <mfp:server runtime="mfp" url="https://mobilefoundation-bb-server.mybluemix.net:443" />
+    <mfp:server runtime="mfp" url="http://localhost:9080" />
     <mfp:directUpdateAuthenticityPublicKey />
     <mfp:languagePreferences>en</mfp:languagePreferences>
     <engine name="ios" spec="~4.1.1" />
