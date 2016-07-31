@@ -4,7 +4,7 @@ IBM MobileFirst Foundation 8.0
 A sample showing how to add trusted device by scan a QR code from your mobile app using [MobileFirst Foundation 8.0](http://mobilefirstplatform.ibmcloud.com).
 
 ##Demo
-[![Trust your web client](https://img.youtube.com/vi/Rqd5l7UPBf0/0.jpg)](https://www.youtube.com/watch?v=Rqd5l7UPBf0)
+[![Trust your web client](https://img.youtube.com/vi/95bXRedN_8I/0.jpg)](https://www.youtube.com/watch?v=95bXRedN_8I)
 
 ### Prerequisites
 1. Understanding the IBM MobileFirst Platform [Authentication and Security](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).
