@@ -48,7 +48,7 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
 You can either run this sample on local installation of [IBM MobileFirst Foundation](https://mobilefirstplatform.ibmcloud.com/downloads/) and [NodeJS](https://nodejs.org/en/download/), 
 Or using [IBM MobileFirst Foundation on Bluemix](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ibm-containers/using-mobile-foundation/) and [CloudFoundry NodeJS appilcation](https://www.ibm.com/developerworks/cloud/library/cl-bluemix-fundamentals-create-and-deploy-a-node-app-to-the-cloud/).
 
-Full description about the implementation and use of this security check can be found in this [blog post](https://github.com/mfpdev/trust-a-device-sample).
+> More technical details about the implementation of this sample can be found in this [blog post](https://github.com/mfpdev/trust-a-device-sample).
     
 ### Supported Levels
 IBM MobileFirst Platform Foundation 8.0
