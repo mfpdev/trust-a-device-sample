@@ -31,7 +31,7 @@ public class QRCodeWebLoginSecurityCheck extends UserAuthenticationSecurityCheck
 
 	static final String QR_CODE_UUID = "qrCodeUUID";
 	static final String WEB_USER_REGISTRATION_KEY = "webUser";
-	private static final int QR_CODE_IMAGE_SIZE = 300;
+	private static final int QR_CODE_IMAGE_SIZE = 250;
 
 	private String userId, displayName;
 

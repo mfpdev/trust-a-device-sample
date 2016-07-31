@@ -20,45 +20,43 @@ body,html {
 	margin: 0 auto;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	color: #ffffff;
+	text-align: center;
 }
 
 #title {
 	font-family: "HelveticaNeue-Medium";
 	font-size: 20px;
    	text-align: center;
-	position:fixed;
-	top: 270px;
-	width: 860px;
-	left: 40%;
-	height:400px;
-	margin-top: -9em; 
-	margin-left: -15em; 
+	margin: auto;
+	top: 20px;
+	width: 50%;
+	margin-left: 25%;
 }
 
 #titleDisplayText {
-	margin-bottom: -10px;
-	font-size: 30px;
+	margin-top: -10px;
+	font-size: 26px;
 }
 
 #displayText {
+
 	font-size: 24px;
+}
+
+#qrCodeDiv {
+	float: center;
+	padding-top:40px;
 }
 
 #content {
 	text-align: center ;
-	width: 800px;
-	background-color: white;
 	color: #666666;
-
-	position:fixed;
-	top: 300px;
-	left: 36%;
+	margin: auto;
 	height:300px;
-	margin-top: -9em; 
-	margin-left: -15em;
-	padding-bottom: 40px;
-	padding-right: 30px;
-	padding-left: 30px;
+	width: 320px;
+	background-color: white;
+	height: 480px;
+	overflow: hidden;
 }
 
 a {
