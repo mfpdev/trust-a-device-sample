@@ -29,6 +29,7 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
 * [NodeJS Web App](./node-web-app) - The web app which will display the QR code. Scanning the QR code will let the mobile app trust the web app.
     -  In the file [`app.js`](./node-web-app/app.js) change `mfpServer` to point to you MobileFirst Foundation server URL.
     -  From a command-line window, navigate to the project's root folder and run the commands:
+        - `mfpdev app register` - to register the web application. 
         - `npm install` - to install all the node dependencies.
         - `node app.js` - to run the node web server.
 
