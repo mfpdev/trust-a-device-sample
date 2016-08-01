@@ -19,6 +19,7 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
 * [UserLogin Security Check](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/user-authentication/security-check/) - The `UserLogin` Security Check which will used to autorized the mobile app.
     - Download the UserLogin Security Check from the [following link](https://hub.jazz.net/git/imflocalsdk/console-samples/contents/master/UserLogin.zip)
     - Use either [Maven](https://maven.apache.org/) or [MobileFirst Developer CLI](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/6.3/advanced-client-side-development/using-cli-create-build-manage-project-artifacts/) to [build and deploy adapter](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/).
+    - Recommended: After deploying the adapter change the parameter 'How long is a successful state valid for' to a longer time frame (say 3600 seconds) in the 'Security Checks' tab in the adapter configuration in the MobileFirst Operations Console.
 
 * [QRCodeWebLogin Security Check](/qrcode-web-login-security-check) - The `QRCodeWebLogin` Security Check which will be used to authorized the web client / add trust in device.
     - Change the `webURLForNotify` property in the [adapter.xml](/qrcode-web-login-security-check/src/main/adapter-resources/adapter.xml) to point to the Node web app.
