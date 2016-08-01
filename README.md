@@ -44,7 +44,7 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
         - `mfpdev app register` - to register the application.
         - `cordova run` - to run the application.
 
-> By default when you use the sample app enter a password that is the same as the username you choose.   
+> By default, when you use the sample app, enter a password that is the same as the username you choose.   
 
 > To be able scan QR code the app is using the [PhoneGap Plugin BarcodeScanner](https://github.com/phonegap/phonegap-plugin-barcodescanner.git).
 
