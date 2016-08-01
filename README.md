@@ -40,8 +40,11 @@ A sample showing how to add trusted device by scan a QR code from your mobile ap
 * [Cordova Mobile App](cordova-app) - The mobile app which will be used to scan the QR code on the web app.
     - From a command-line window, navigate to the project's root folder and run the commands:
         - `cordova platform add {your favorite platform}` - to add a platform. 
+        - `cordova plugin add phonegap-plugin-barcodescanner` - to add the QR code plugin.
         - `mfpdev app register` - to register the application.
         - `cordova run` - to run the application.
+
+> By default when you use the sample app enter a password that is the same as the username you choose.   
 
 > To be able scan QR code the app is using the [PhoneGap Plugin BarcodeScanner](https://github.com/phonegap/phonegap-plugin-barcodescanner.git).
 
