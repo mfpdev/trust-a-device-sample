@@ -13,7 +13,7 @@ QRCodeChallengeHandler.handleChallenge = function (challenge) {
         //In case the page is refreshed manually 
         QRCodeChallengeHandler.submitChallengeAnswer({});
     } else {
-        document.getElementById("displayTxt").innerHTML = "To turst this device, <br>use your mobile app to<br> scan the QR code.";
+        document.getElementById("displayTxt").innerHTML = "To trust this device, <br>use your mobile app to<br> scan the QR code.";
         var qrImage = document.getElementById("qrCode");
         qrImage.src = "data:image/jpg;base64," + challenge.qrCode;
         
